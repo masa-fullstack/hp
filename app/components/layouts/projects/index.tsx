@@ -45,7 +45,6 @@ const Projects: FC<Props> = ({ projects = [] }) => {
           <Heading as="h1" size="xl">
             Projects
           </Heading>
-          <Text>Open Source Projects developed and available on Github</Text>
         </VStack>
       </Box>
     );
@@ -62,6 +61,19 @@ const Projects: FC<Props> = ({ projects = [] }) => {
   const descriptionNode = (description: string) => {
     return <Text fontSize="sm">{description}</Text>;
   };
+
+  const imgNode = (imgUrl: string) => {
+    return (
+      <Image
+        src={`/images/common/${imgUrl}`}
+        alt="Project Image"
+        boxSize={64}
+        objectFit="cover"
+      />
+
+    );
+  }
+
 
   const ctaNode = () => {
     return (
@@ -108,6 +120,7 @@ const Projects: FC<Props> = ({ projects = [] }) => {
                       {titleNode(project.title)}
                       {descriptionNode(project.description)}
                     </VStack>
+                    {project.imgUrl && <Box>{imgNode(project.imgUrl)}</Box>}
                     <Box>{ctaNode()}</Box>
                   </VStack>
                 </Box>

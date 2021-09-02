@@ -15,7 +15,7 @@ const SocialLinks: FC = () => {
           <HStack spacing={2}>
             <Box>
               <_Link
-                href="https://github.com/ghoshnirmalya/nirmalyaghosh.com"
+                href="https://github.com/masa-fullstack/hp"
                 p={4}
               >
                 Source code on Github
@@ -23,7 +23,7 @@ const SocialLinks: FC = () => {
             </Box>
             <Box>
               <Link href="/">
-                <_Link href="/" target="_blank" p={4}>
+                <_Link href="/" target="_self" p={4}>
                   <Image
                     src="/images/common/favicon.svg"
                     alt="Logo"
@@ -35,7 +35,7 @@ const SocialLinks: FC = () => {
             </Box>
             <Box p={4}>
               <Text>
-                Copyright &copy; {new Date().getFullYear()} Nirmalya Ghosh
+                Copyright &copy; {new Date().getFullYear()} Masahide Ishida
               </Text>
             </Box>
           </HStack>

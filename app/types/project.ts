@@ -3,4 +3,5 @@ export default interface Publication {
   description: string;
   url: string;
   demoUrl?: string;
+  imgUrl?: string;
 }

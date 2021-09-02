@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React, { FC } from "react";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import { IoLogoGithub, IoLogoTwitter } from "react-icons/io";
 
 const Page: FC = () => {
   const headingNode = () => {
@@ -28,9 +28,9 @@ const Page: FC = () => {
         <Box>
           <VStack spacing={2} align="left">
             <Heading as="h1" size="xl">
-              Nirmalya Ghosh
+              石田　雅英
             </Heading>
-            <Text>A little bit about me</Text>
+            <Text>WEBエンジニア</Text>
           </VStack>
         </Box>
       </HStack>
@@ -40,31 +40,28 @@ const Page: FC = () => {
   const bioDescriptionNode = () => {
     return (
       <Box className="article">
-        <Text fontWeight="bold">
-          Computer Science Engineer having interest in web-designing and
-          development with an eye for detail.
-        </Text>
         <Text>
-          I'm also a big fan of{" "}
-          <Box as="span" fontWeight="bold">
-            React.js
-          </Box>{" "}
-          and have{" "}
-          <Box as="span" fontWeight="bold">
-            around 5 years
-          </Box>{" "}
-          experience with it. I have also fiddled with Ruby on Rails and Elixir.
-          I'm eager to learn new frameworks, libraries and languages like Elm,
-          Vue.js and ReasonML. I'm also interested in learning Go and Python.
+          ITコンサル、エンジニアとして活動中です。
         </Text>
+        <br />
         <Text>
-          Though I spend most of my time writing code for building User
-          Interfaces, I've also fiddled with many Back-end technologies. I like
-          enjoying working in the intersection of design and development. I feel
-          most productive when I'm able to design User Interfaces which not only
-          look good but has a good performance as well.
+          関西の大手メーカーや教育事業会社で社内システムのIT企画、開発、運用を経験し独立しました。
+        </Text>
+        <br />
+        <Text>
+          WEBサイト制作、WEBサービス開発、アプリ開発に加え、デジタルトランスフォーメーション、業務プロセス見直しなどコンサル領域も承っております。
+        </Text>
+        <br />
+        <Text>
+          ブロックチェーン技術についても多少の知見がありますので、Dapps開発、NFT化代行などもご相談下さい。
+        </Text>
+        <br />
+        <br />
+        <Text>
+          お問い合わせはメニューの「Contact」よりお願い致します。
         </Text>
       </Box>
+
     );
   };
 
@@ -82,7 +79,7 @@ const Page: FC = () => {
             <Link
               py={2}
               px={4}
-              href="https://github.com/ghoshnirmalya"
+              href="https://github.com/masa-fullstack"
               rounded="md"
               bg="#333"
               color="#fff"
@@ -96,7 +93,7 @@ const Page: FC = () => {
             <Link
               py={2}
               px={4}
-              href="https://www.linkedin.com/in/ghoshnirmalya/"
+              href="https://twitter.com/_i_masa"
               rounded="md"
               bg="#0e76a8"
               color="#fff"
@@ -104,7 +101,7 @@ const Page: FC = () => {
               isExternal
             >
               <HStack spacing={2} alignItems="center">
-                <Box as={IoLogoLinkedin} /> <Text>LinkedIn</Text>
+                <Box as={IoLogoTwitter} /> <Text>Twitter</Text>
               </HStack>
             </Link>
           </HStack>

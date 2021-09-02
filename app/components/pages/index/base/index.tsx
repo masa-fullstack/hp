@@ -1,9 +1,7 @@
 import { Box, VStack } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import React, { FC } from "react";
-import IArticle from "types/article";
 import IProject from "types/project";
-import IPublication from "types/publication";
 
 const Jumbotron = dynamic(
   import(
@@ -17,28 +15,12 @@ const Projects = dynamic(
 );
 
 interface Props {
-  articles: (IArticle & IPublication)[];
-  publications: any;
   projects: IProject[];
 }
 
 const Page: FC<Props> = ({
-  articles = [],
-  publications = [],
   projects = [],
 }) => {
-  const allArticlesAndPublications = [...articles, ...publications];
-
-  const sortedAllArticlesAndPublications: (IArticle &
-    IPublication)[] = allArticlesAndPublications.sort(
-      (a: IArticle & IPublication, b: IArticle & IPublication) => {
-        return (
-          Number(new Date(b.frontMatter.date)) -
-          Number(new Date(a.frontMatter.date))
-        );
-      }
-    );
-
   return (
     <>
       <Box as="section">
