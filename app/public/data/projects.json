@@ -8,20 +8,20 @@
   },
   {
     "title": "SakePool🍶",
-    "description": "ブロックチェーンノードのWEBサイトです。ブログのシステムから開発しました。",
+    "description": "ブロックチェーンノード運営のWEBサイトです。ブログシステムから開発しました。",
     "url": "https://sakepool.com/",
     "demoUrl": "https://github.com/sake-pool/nextjs-microcms-blog",
     "imgUrl": "sakepool.jpg"
   },
   {
     "title": "my-unsplash",
-    "description": "【個人開発】Unsplashの簡易クローンサイトです。画像をアップロードし一覧で確認できます。",
+    "description": "【個人開発】Unsplashの簡易クローンサイトです。画像をアップロードし一覧で確認できます。※エラーが出る場合は、再度数秒待ってからリロードして下さい。",
     "url": "https://my-unsplash-tau.vercel.app",
     "imgUrl": "myunsplash.jpg"
   },
   {
     "title": "Weather App",
-    "description": "【個人開発】簡易な天気予報サービスです。",
+    "description": "【個人開発】簡易な天気予報サービスです。※エラーが出る場合は、再度数秒待ってからリロードして下さい。",
     "url": "https://weather-app-master-psi.vercel.app/",
     "imgUrl": "weather.png"
   }

@@ -1,15 +1,15 @@
 export default {
   details: {
-    title: "Nirmalya Ghosh",
-    tagLine: "Designer and Developer",
-    description: "Personal portfolio of Nirmalya Ghosh",
-    url: "https://www.nirmalyaghosh.com",
+    title: "Masahide Ishida",
+    tagLine: "Developer",
+    description: "Personal portfolio of Masahide Ishida",
+    url: "https://hp-omega.vercel.app",
   },
   assets: {
-    avatar: "/images/common/seo-cover.png",
+    avatar: "/images/common/seo-cover.jpg",
     favicon: "/images/common/favicon.svg",
   },
   socialLinks: {
-    twitter: "@nirmalyaghosh23",
+    twitter: "@_i_masa",
   },
 };
