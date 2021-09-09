@@ -26,7 +26,7 @@ const Page: FC<Props> = ({
       <Box as="section">
         <Jumbotron />
       </Box>
-      <Box mt={64}>
+      <Box mt={24}>
         <Box maxW="6xl" mx="auto" px={8} py={8} id="solutions">
           <VStack spacing={32} order={[2, 2, 2, 1]} align="left">
             <Box as="section">
