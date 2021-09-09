@@ -25,16 +25,6 @@ const SocialLinks: FC = () => {
             </Box>
             <HStack spacing={2}>
               <Box>
-                <_Link
-                  href="https://github.com/masa-fullstack/hp"
-                  p={4}
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Source code on Github
-                </_Link>
-              </Box>
-              <Box>
                 <Link href="/">
                   <_Link href="/" target="_self" p={4}>
                     <Image
