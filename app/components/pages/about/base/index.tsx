@@ -51,11 +51,11 @@ const Page: FC = () => {
     return (
       <Box className="article">
         <Text>
-          ITコンサル、WEBエンジニアとして活動中です。
+          フリーランスのITコンサル、WEBエンジニアとして活動中です。
         </Text>
         <br />
         <Text>
-          関西の大手メーカーや教育事業会社で社内システムのIT企画、開発、運用を経験し独立し、フリーランスとして活動しております。
+          関西の大手メーカーや教育事業会社で社内システムのIT企画、開発、運用を経験し独立しました。
         </Text>
         <br />
         <Text>
@@ -63,14 +63,10 @@ const Page: FC = () => {
         </Text>
         <br />
         <Text>
-          また、ブロックチェーン技術についても多少の知見がありますので、Dapps開発、NFT化代行などもご相談下さい。
+          また、ブロックチェーン技術についても知見があります。Dapps開発、NFT化代行などもご相談下さい。
         </Text>
         <br />
         <br />
-        <Text>
-          お問い合わせは上部メニューの「Contact」よりお願い致します。
-        </Text>
-
         <Heading as="h1" size="lg" mt={16} mb={8}>
           Skills
         </Heading>
