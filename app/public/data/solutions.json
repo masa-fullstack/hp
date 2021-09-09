@@ -1,0 +1,12 @@
+[
+  {
+    "title": "ITコンサル",
+    "description": "デジタルトランスフォーメーション、業務プロセスの見直しなど、業務をもっと早く簡単にし、スマートな働き方が出来る様にサポートいたします。費用対効果の高いソリューションの提供を行います。",
+    "imgUrl": "/images/content/solutions/anime1.json"
+  },
+  {
+    "title": "WEBサービス、アプリ開発",
+    "description": "WEBサービス、アプリ、サイトの開発を行います。設計やデザイン、プロジェクトの管理もお任せ下さい。公開可能な制作実績はProjectsをご参照下さい。",
+    "imgUrl": "/images/content/solutions/anime2.json"
+  }
+]

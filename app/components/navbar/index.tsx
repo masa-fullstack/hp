@@ -11,48 +11,61 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
+import { Link as Scroll } from 'react-scroll';
 
 interface NavLink {
   url: string;
   title: string;
   target: string;
+  scroll?: string;
 }
 
 const LINKS = [
   {
+    url: "/solutions",
+    title: "Solutions",
+    target: "_self",
+    scroll: "solutions"
+  },
+  {
     url: "/projects",
     title: "Projects",
-    target: "_self"
+    target: "_self",
+    scroll: "projects"
+  },
+  {
+    url: "/about",
+    title: "About",
+    target: "_self",
+    scroll: "about"
   },
   {
     url: "https://docs.google.com/forms/d/e/1FAIpQLScieqoBSOzpa-ph30PrkTSttpU_w9wwoEqdnaRo0J6ogdWF2A/viewform?usp=sf_link",
     title: "Contact",
     target: "_blank"
   },
-  {
-    url: "/about",
-    title: "About",
-    target: "_self"
-  },
+
 ];
 
 const Navbar: FC = () => {
   const mobileMenuNode = () => {
     return (
-      <Menu>
+      <Menu id="menu_1">
         <MenuButton as={Button}>Menu</MenuButton>
         <MenuList placement="bottom-end" bg="gray.900" color="white">
           {[
             LINKS.map((link: NavLink) => {
               return (
                 <Box key={link.url}>
-                  <Link href={link.url}>
-                    <MenuItem>
-                      <_Link href={link.url} rounded="md" target={link.target}>
-                        {link.title}
-                      </_Link>
-                    </MenuItem>
-                  </Link>
+                  {link.scroll ? <Scroll to={link.scroll} smooth={true} duration={600} offset={-10}><Box p={4} _hover={{ cursor: "pointer", textDecoration: "underline" }}>{link.title}</Box></Scroll> :
+                    <Link href={link.url}>
+                      <Box p={4}>
+                        <_Link href={link.url} rounded="md" target={link.target}>
+                          {link.title}
+                        </_Link>
+                      </Box>
+                    </Link>
+                  }
                 </Box>
               );
             }),
@@ -69,11 +82,15 @@ const Navbar: FC = () => {
           LINKS.map((link: NavLink) => {
             return (
               <Box key={link.url}>
-                <Link href={link.url}>
-                  <_Link p={4} href={link.url} rounded="md" target={link.target}>
-                    {link.title}
-                  </_Link>
-                </Link>
+                {link.scroll ? <Scroll to={link.scroll} smooth={true} duration={600} offset={-10}><Box p={4} _hover={{ cursor: "pointer", textDecoration: "underline" }}>{link.title}</Box></Scroll> :
+                  <Link href={link.url}>
+                    <Box p={4}>
+                      <_Link href={link.url} rounded="md" target={link.target}>
+                        {link.title}
+                      </_Link>
+                    </Box>
+                  </Link>
+                }
               </Box>
             );
           }),
@@ -93,6 +110,7 @@ const Navbar: FC = () => {
       px={4}
       borderTopWidth={5}
       borderColor="blue.400"
+      id="top"
     >
       <Box maxW="6xl" mx="auto">
         <HStack justifyContent="space-between" alignItems="center" py={4}>

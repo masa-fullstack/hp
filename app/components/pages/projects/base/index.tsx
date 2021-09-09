@@ -13,7 +13,7 @@ interface Props {
 
 const Page: FC<Props> = ({ projects = [] }) => {
   return (
-    <Box maxW="6xl" mx="auto" px={4} py={8}>
+    <Box maxW="6xl" mx="auto" px={4} py={8} id="projects">
       <Grid templateColumns="1fr">
         <Box as="section">
           <Projects projects={projects} />

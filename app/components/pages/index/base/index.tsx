@@ -1,36 +1,36 @@
 import { Box, VStack } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import React, { FC } from "react";
-import IProject from "types/project";
+import ISolution from "types/solution";
 
 const Jumbotron = dynamic(
   import(
     /* webpackChunkName: "Jumbotron" */ "components/pages/index/base/jumbotron"
   )
 );
-const Projects = dynamic(
+const Solutions = dynamic(
   import(
-    /* webpackChunkName: "Projects" */ "components/pages/index/base/projects"
+    /* webpackChunkName: "Solutions" */ "components/pages/index/base/solutions"
   )
 );
 
 interface Props {
-  projects: IProject[];
+  solutions: ISolution[];
 }
 
 const Page: FC<Props> = ({
-  projects = [],
+  solutions = [],
 }) => {
   return (
     <>
       <Box as="section">
         <Jumbotron />
       </Box>
-      <Box>
-        <Box maxW="2xl" mx="auto" px={4} py={8}>
+      <Box mt={64}>
+        <Box maxW="6xl" mx="auto" px={8} py={8} id="solutions">
           <VStack spacing={32} order={[2, 2, 2, 1]} align="left">
             <Box as="section">
-              <Projects projects={projects.slice(0, 10)} />
+              <Solutions solutions={solutions.slice(0, 10)} />
             </Box>
           </VStack>
         </Box>

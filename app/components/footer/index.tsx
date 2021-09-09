@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Link as _Link, Text } from "@chakra-ui/react";
+import { Box, VStack, HStack, Image, Link as _Link, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React, { FC } from "react";
 
@@ -12,33 +12,47 @@ const SocialLinks: FC = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <HStack spacing={2}>
+          <VStack spacing={2}>
             <Box>
               <_Link
-                href="https://github.com/masa-fullstack/hp"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScieqoBSOzpa-ph30PrkTSttpU_w9wwoEqdnaRo0J6ogdWF2A/viewform"
                 p={4}
+                target="_blank"
+                rel="noopener"
               >
-                Source code on Github
+                <Text fontSize="sm">お問合せはこちらからどうぞ</Text>
               </_Link>
             </Box>
-            <Box>
-              <Link href="/">
-                <_Link href="/" target="_self" p={4}>
-                  <Image
-                    src="/images/common/favicon.svg"
-                    alt="Logo"
-                    boxSize={8}
-                    mx="auto"
-                  />
+            <HStack spacing={2}>
+              <Box>
+                <_Link
+                  href="https://github.com/masa-fullstack/hp"
+                  p={4}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Source code on Github
                 </_Link>
-              </Link>
-            </Box>
-            <Box p={4}>
-              <Text>
-                Copyright &copy; {new Date().getFullYear()} Masahide Ishida
-              </Text>
-            </Box>
-          </HStack>
+              </Box>
+              <Box>
+                <Link href="/">
+                  <_Link href="/" target="_self" p={4}>
+                    <Image
+                      src="/images/common/favicon.svg"
+                      alt="Logo"
+                      boxSize={8}
+                      mx="auto"
+                    />
+                  </_Link>
+                </Link>
+              </Box>
+              <Box p={4}>
+                <Text>
+                  Copyright &copy; {new Date().getFullYear()} Masahide Ishida
+                </Text>
+              </Box>
+            </HStack>
+          </VStack>
         </Box>
       </Box>
     </Box>

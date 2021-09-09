@@ -14,26 +14,36 @@ import { IoLogoGithub, IoLogoTwitter } from "react-icons/io";
 const Page: FC = () => {
   const headingNode = () => {
     return (
-      <HStack spacing={4} alignItems="center">
-        <Box bg="white" color="gray.900" rounded="full" p={1} w={100} h={100}>
-          <Image
-            src="/images/common/avatar.png"
-            alt="Nirmalya Ghosh"
-            height={100}
-            width={100}
-            quality={100}
-            priority
-          />
-        </Box>
-        <Box>
+      <Box>
+        <Box marginBottom="10">
           <VStack spacing={2} align="left">
             <Heading as="h1" size="xl">
-              石田　雅英
+              About Me
             </Heading>
-            <Text>WEBエンジニア</Text>
           </VStack>
         </Box>
-      </HStack>
+
+        <HStack spacing={4} alignItems="center">
+          <Box bg="white" color="gray.900" rounded="full" p={1} w={100} h={100}>
+            <Image
+              src="/images/common/avatar.png"
+              alt="masahide ishida"
+              height={100}
+              width={100}
+              quality={100}
+              priority
+            />
+          </Box>
+          <Box>
+            <VStack spacing={2} align="left">
+              <Heading as="h1" size="xl">
+                石田　雅英
+              </Heading>
+              <Text>WEBエンジニア</Text>
+            </VStack>
+          </Box>
+        </HStack>
+      </Box>
     );
   };
 
@@ -60,6 +70,11 @@ const Page: FC = () => {
         <Text>
           お問い合わせは上部メニューの「Contact」よりお願い致します。
         </Text>
+
+        <Heading as="h1" size="lg" mt={16} mb={8}>
+          Skills
+        </Heading>
+        <Text>HTML, CSS, JavaScript(TypeScript), NodeJS, React, NextJS, NestJS, Docker, Git, UiPath, DataSpider, AWS, GCP, GAS, Liff, C, Haskell</Text>
       </Box>
 
     );
@@ -111,17 +126,17 @@ const Page: FC = () => {
   };
 
   return (
-    <Box maxW="2xl" mx="auto" px={4} py={8}>
+    <Box maxW="6xl" mx="auto" px={8} py={8} id="about">
       <Grid templateColumns="1fr">
         <Box as="section">
-          <VStack spacing={8} align="left">
+          <VStack spacing={16} align="left">
             {headingNode()}
             {bioDescriptionNode()}
             {socialLinksNode()}
           </VStack>
         </Box>
       </Grid>
-    </Box>
+    </Box >
   );
 };
 
