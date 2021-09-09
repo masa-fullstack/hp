@@ -29,9 +29,9 @@ const IndexPage: NextPage = () => {
   return (
     <>
       <Page solutions={solutions} />
-      <Box mt={64} />
+      <Box mt={{ base: 24, md: 64 }} />
       <ProjectsPage projects={projects} />
-      <Box mt={64} />
+      <Box mt={{ base: 24, md: 64 }} />
       <AboutPage />
       {scrollPosition > 500 && (<Scroll to="top" smooth={true} duration={600} offset={-10}>
         <Box position='fixed'
