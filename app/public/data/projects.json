@@ -1,14 +1,14 @@
 [
   {
     "title": "今日飲も！🍻",
-    "description": "LINEのトークルームから、飲みのお誘いの回答が１タップで出来るLINEアプリです。",
+    "description": "LINEのトークルームから、飲みのお誘いの回答が１タップで出来るLINEアプリ、WEBサイトの開発を行いました。",
     "url": "https://kyonomo.com/",
     "demoUrl": "https://github.com/masa-fullstack/kyonomo",
     "imgUrl": "kyonomo.png"
   },
   {
     "title": "SakePool🍶",
-    "description": "ブロックチェーンノード運営のWEBサイトです。ブログシステムから開発しました。",
+    "description": "AWS上にブロックチェーンノードの構築、ブログシステム開発（フロントエンドのみ）を行いました。",
     "url": "https://sakepool.com/",
     "demoUrl": "https://github.com/sake-pool/nextjs-microcms-blog",
     "imgUrl": "sakepool.jpg"
