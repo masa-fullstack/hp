@@ -8,7 +8,6 @@ import {
 } from "@chakra-ui/react";
 import lottie from 'lottie-web'
 import React, { FC, useEffect, useRef } from "react";
-import Image from "next/image";
 import ISolution from "types/solution";
 
 interface Props {
@@ -44,8 +43,8 @@ const solutions: FC<Props> = ({
     }, [imgUrl])
 
     return (
-      <Box color="gray.900" rounded="lg" p={1} w={200} h={200} d="flex" alignItems="center">
-        <Box ref={ref} minWidth={{ base: "150", md: "200" }} />
+      <Box color="gray.900" rounded="lg" p={1} w={320} h={320} d="flex" alignItems="center">
+        <Box ref={ref} minWidth={320} />
       </Box>
     );
   };
@@ -62,7 +61,10 @@ const solutions: FC<Props> = ({
     return <Text fontSize="sm">{description}</Text>;
   };
 
-  const solutionsNode = () => {
+
+
+
+  const desktopSolutionsNode = () => {
     return solutions.map((project: ISolution, index: number) => {
       return (
         <Box key={index}>
@@ -78,10 +80,31 @@ const solutions: FC<Props> = ({
     });
   };
 
+  const mobileSolutionsNode = () => {
+    return solutions.map((project: ISolution, index: number) => {
+      return (
+        <Box key={index} mb={24}>
+          <VStack spacing={4}>
+            {imgNode(project.imgUrl)}
+            <VStack spacing={1} align="left">
+              {titleNode(project.title)}
+              {descriptionNode(project.description)}
+            </VStack>
+          </VStack>
+        </Box>
+      );
+    });
+  };
+
   return (
     <VStack spacing={8} align="left">
       {headingNode()}
-      {solutionsNode()}
+      <Box display={["none", "none", "none", "block"]}>
+        {desktopSolutionsNode()}
+      </Box>
+      <Box display={["block", "block", "block", "none"]} px={4}>
+        {mobileSolutionsNode()}
+      </Box>
     </VStack>
   );
 };

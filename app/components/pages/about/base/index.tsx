@@ -51,26 +51,27 @@ const Page: FC = () => {
     return (
       <Box className="article">
         <Text>
-          フリーランスのITコンサル、WEBエンジニアとして活動中です。
+          フリーランスのITコンサル、WEBエンジニアとして活動しています。<br />
+          関西の大手メーカーや教育事業会社で社内システムのIT企画、開発、運用を経験し独立しました。<br />
+          エンジニア歴は１８年です。<br />
+          WEBサイト制作、WEBサービス開発、アプリ開発に加え、デジタルトランスフォーメーション、業務プロセス見直しなどコンサルティング、メンタリング(技術指導)も承っております。<br />
         </Text>
-        <br />
-        <Text>
-          関西の大手メーカーや教育事業会社で社内システムのIT企画、開発、運用を経験し独立しました。
-        </Text>
-        <br />
-        <Text>
-          WEBサイト制作、WEBサービス開発、アプリ開発に加え、デジタルトランスフォーメーション、業務プロセス見直しなどコンサル領域も承っております。
-        </Text>
-        <br />
-        <Text>
-          また、ブロックチェーン技術についても知見があります。Dapps開発、NFT化代行などもご相談下さい。
-        </Text>
-        <br />
-        <br />
         <Heading as="h1" size="lg" mt={16} mb={8}>
           Skills
         </Heading>
-        <Text>HTML, CSS, JavaScript(TypeScript), NodeJS, React, NextJS, NestJS, Docker, Git, UiPath, DataSpider, AWS, GCP, GAS, Liff, C, Haskell</Text>
+        <Text>
+          【コード】<br />
+          HTML, CSS, JavaScript(TypeScript), Google Apps Script, Python, C, Haskell<br />
+          <br />
+          【フレームワーク】<br />
+          React, NextJS, NestJS, LIFF, Django<br />
+          <br />
+          【クラウドプラットフォーム】<br />
+          AWS, GCP, Vercel, Netlify ... etc<br />
+          <br />
+          【アプリケーション】<br />
+          Docker, Git, UiPath, DataSpider, Vscode ... etc<br />
+        </Text>
       </Box>
 
     );
