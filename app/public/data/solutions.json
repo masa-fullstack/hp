@@ -8,5 +8,10 @@
     "title": "WEBサービス、アプリ開発",
     "description": "WEBサービス、アプリ、サイトの開発を行います。設計やデザイン、プロジェクトの管理もお任せ下さい。公開可能な制作実績はProjectsをご参照下さい。",
     "imgUrl": "/images/content/solutions/anime2.json"
+  },
+  {
+    "title": "メンタリング",
+    "description": "人材の技術指導も承ります。オンラインを使用したマンツーマンで疑問点の解消や、添削など行います。",
+    "imgUrl": "/images/content/solutions/anime5.json"
   }
 ]

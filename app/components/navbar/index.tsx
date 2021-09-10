@@ -28,6 +28,12 @@ const LINKS = [
     scroll: "solutions"
   },
   {
+    url: "/price",
+    title: "Price",
+    target: "_self",
+    scroll: "price"
+  },
+  {
     url: "/projects",
     title: "Projects",
     target: "_self",

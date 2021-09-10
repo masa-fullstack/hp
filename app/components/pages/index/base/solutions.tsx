@@ -23,7 +23,7 @@ const solutions: FC<Props> = ({
     return (
       <Box pb={4} d="flex" justifyContent="space-between" alignItems="center">
         <Heading as="h2" size="xl">
-          solutions
+          Solutions
         </Heading>
       </Box>
     );

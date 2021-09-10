@@ -24,16 +24,17 @@ const Page: FC = () => {
         </Box>
 
         <HStack spacing={4} alignItems="center">
-          <Box bg="white" color="gray.900" rounded="full" p={1} w={100} h={100}>
+          {/* <Box bg="white" color="gray.900" rounded="full" p={1} w={100} h={100}>
             <Image
-              src="/images/common/avatar.png"
+              // src="/images/common/avatar.png"
+              src="/images/common/me.png"
               alt="masahide ishida"
               height={100}
               width={100}
               quality={100}
               priority
             />
-          </Box>
+          </Box> */}
           <Box>
             <VStack spacing={2} align="left">
               <Heading as="h1" size="xl">
@@ -52,8 +53,10 @@ const Page: FC = () => {
       <Box className="article">
         <Text>
           フリーランスのITコンサル、WEBエンジニアとして活動しています。<br />
-          関西の大手メーカーや教育事業会社で社内システムのIT企画、開発、運用を経験し独立しました。<br />
-          エンジニア歴は１８年です。<br />
+          2004年より関西の大手メーカーで社内システムの開発、運用を経験。<br />
+          2019年より関西の教育事業会社でIT企画を経験。<br />
+          2021年よりフリーランスとして独立しました。<br />
+          エンジニア歴１９年目です。<br />
           WEBサイト制作、WEBサービス開発、アプリ開発に加え、デジタルトランスフォーメーション、業務プロセス見直しなどコンサルティング、メンタリング(技術指導)も承っております。<br />
         </Text>
         <Heading as="h1" size="lg" mt={16} mb={8}>

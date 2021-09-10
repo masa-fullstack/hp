@@ -1,6 +1,7 @@
 import Page from "components/pages/index/base/index";
 import ProjectsPage from "components/pages/projects/base";
 import AboutPage from "components/pages/about/base";
+import PricePage from "components/pages/index/base/price";
 import { NextPage } from "next";
 import { Box, Image } from "@chakra-ui/react";
 
@@ -29,6 +30,8 @@ const IndexPage: NextPage = () => {
   return (
     <>
       <Page solutions={solutions} />
+      <Box mt={{ base: 24, md: 64 }} />
+      <PricePage />
       <Box mt={{ base: 24, md: 64 }} />
       <ProjectsPage projects={projects} />
       <Box mt={{ base: 24, md: 64 }} />
