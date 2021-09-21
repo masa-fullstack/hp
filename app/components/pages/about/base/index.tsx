@@ -64,7 +64,7 @@ const Page: FC = () => {
         </Heading>
         <Text>
           【コード】<br />
-          HTML, CSS, JavaScript(TypeScript), Google Apps Script, Python, C, Haskell<br />
+          HTML, CSS, JavaScript(TypeScript), SQL, GraphQL, Google Apps Script, Python, C, Haskell<br />
           <br />
           【フレームワーク】<br />
           React, NextJS, NestJS, LIFF, Django<br />
