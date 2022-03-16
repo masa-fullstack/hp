@@ -1,8 +1,10 @@
 import {
   Box,
+  Flex,
   Heading,
   HStack,
   Link as _Link,
+  Tag,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -58,6 +60,12 @@ const projects: FC<Props> = ({
     return <Text fontSize="sm">{description}</Text>;
   };
 
+  const skillsNode = (skill: string) => {
+    return (
+      <Tag size={"sm"} color={"blue.400"} bgColor={"blue.50"} m={"0.5"}>{skill}</Tag>
+    )
+  };
+
   const projectsNode = () => {
     return projects.map((project: IProject, index: number) => {
       return (
@@ -66,6 +74,7 @@ const projects: FC<Props> = ({
             <VStack spacing={1} align="left">
               {titleNode(project.title)}
               {descriptionNode(project.description)}
+              <Flex wrap={"wrap"}>{project.skills.map((skill) => skillsNode(skill))}</Flex>
             </VStack>
           </a>
         </Box>

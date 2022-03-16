@@ -1,12 +1,9 @@
 import {
   Box,
   Button,
-  Divider,
   Flex,
   Grid,
   Heading,
-  HStack,
-  Icon,
   Image,
   Input,
   Tag,
