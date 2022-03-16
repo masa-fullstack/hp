@@ -1,18 +1,9 @@
 import { Box, VStack } from "@chakra-ui/react";
-import dynamic from "next/dynamic";
 import React, { FC } from "react";
 import ISolution from "types/solution";
+import Jumbotron from "./jumbotron";
+import Solutions from "./solutions";
 
-const Jumbotron = dynamic(
-  import(
-    /* webpackChunkName: "Jumbotron" */ "components/pages/index/base/jumbotron"
-  )
-);
-const Solutions = dynamic(
-  import(
-    /* webpackChunkName: "Solutions" */ "components/pages/index/base/solutions"
-  )
-);
 
 interface Props {
   solutions: ISolution[];
