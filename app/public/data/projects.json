@@ -1,28 +1,26 @@
 [
   {
     "title": "今日飲も！🍻",
-    "description": "LINEのトークルームから、飲みのお誘いの回答が１タップで出来るLINEアプリ、WEBサイトの開発を行いました。",
-    "url": "https://kyonomo.com/",
+    "description": "LINEのトークルームから、飲みのお誘いの回答が１タップで出来るLINEアプリの開発を行いました。",
+    "skills": ["TypeScript", "LIFF", "NextJS", "NestJS", "ServerlessFramework", "AWS lambda/DynamoDB"],
+    "url": "https://kyonomo.com",
     "demoUrl": "https://github.com/masa-fullstack/kyonomo",
     "imgUrl": "kyonomo.png"
   },
   {
-    "title": "SakePool🍶",
-    "description": "AWS上にブロックチェーンノードの構築、ブログシステム開発（フロントエンドのみ）を行いました。",
-    "url": "https://sakepool.com/",
+    "title": "SAKE🍶",
+    "description": "AWS上にブロックチェーンノードの構築、WEBサイト、ブログシステム構築を行いました。ノードの自動スケールアップや、モニタリング、スケジュール確認など自動化しています。",
+    "skills": ["TypeScript", "Python", "NextJS", "FastAPI", "Docker", "ServerlessFramework", "AWS EC2/DynamoDB/Fargate/Lambda"],
+    "url": "https://sakepool.com",
     "demoUrl": "https://github.com/sake-pool/nextjs-microcms-blog",
     "imgUrl": "sakepool.jpg"
   },
   {
-    "title": "my-unsplash",
-    "description": "【個人開発】Unsplashの簡易クローンサイトです。画像をアップロードし一覧で確認できます。※エラーが出る場合は、再度数秒待ってからリロードして下さい。",
-    "url": "https://my-unsplash-tau.vercel.app",
-    "imgUrl": "myunsplash.jpg"
-  },
-  {
-    "title": "Weather App",
-    "description": "【個人開発】簡易な天気予報サービスです。※エラーが出る場合は、再度数秒待ってからリロードして下さい。",
-    "url": "https://weather-app-master-psi.vercel.app/",
-    "imgUrl": "weather.png"
+    "title": "mihas-project",
+    "description": "カルダノブロックチェーン上のNFT販売サイトを構築しました。ブラウザ拡張機能のウォレットとの対話、ブロックチェーンのトランザクション構築をしています。",
+    "skills": ["TypeScript", "NextJS", "Supabase"],
+    "url": "https://mihas-project.com",
+    "demoUrl": "https://github.com/masa-fullstack/mihas-project",
+    "imgUrl": "LycaonRGB.png"
   }
 ]

@@ -1,10 +1,15 @@
 import {
   Box,
   Button,
+  Divider,
+  Flex,
   Grid,
   Heading,
+  HStack,
+  Icon,
   Image,
   Input,
+  Tag,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -60,6 +65,12 @@ const Projects: FC<Props> = ({ projects = [] }) => {
 
   const descriptionNode = (description: string) => {
     return <Text fontSize="sm">{description}</Text>;
+  };
+
+  const skillsNode = (skill: string) => {
+    return (
+      <Tag size={"sm"} color={"blue.400"} bgColor={"blue.50"} m={"0.5"}>{skill}</Tag>
+    )
   };
 
   const imgNode = (imgUrl: string) => {
@@ -119,6 +130,7 @@ const Projects: FC<Props> = ({ projects = [] }) => {
                     <VStack spacing={1} align="left">
                       {titleNode(project.title)}
                       {descriptionNode(project.description)}
+                      <Flex wrap={"wrap"}>{project.skills.map((skill) => skillsNode(skill))}</Flex>
                     </VStack>
                     {project.imgUrl && <Box>{imgNode(project.imgUrl)}</Box>}
                     <Box>{ctaNode()}</Box>

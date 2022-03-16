@@ -16,9 +16,9 @@ const SocialLinks: FC = () => {
             <Box>
               <_Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLScieqoBSOzpa-ph30PrkTSttpU_w9wwoEqdnaRo0J6ogdWF2A/viewform"
-                p={4}
                 target="_blank"
                 rel="noopener"
+                w={"100%"}
               >
                 <Text fontSize="sm">お問合せはこちらからどうぞ</Text>
               </_Link>
@@ -38,7 +38,7 @@ const SocialLinks: FC = () => {
               </Box>
               <Box p={4}>
                 <Text>
-                  Copyright &copy; {new Date().getFullYear()} Masahide Ishida
+                  © 2021 Masahide Ishida
                 </Text>
               </Box>
             </HStack>
