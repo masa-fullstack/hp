@@ -87,7 +87,7 @@ const Page: FC = () => {
           AWS, GCP, Vercel, Netlify ... etc<br />
           <br />
           【アプリケーション】<br />
-          Docker, Git, UiPath, DataSpider, Vscode ... etc<br />
+          Docker, Git, UiPath, DataSpider, Vscode, Figma ... etc<br />
         </Text>
       </Box>
 
