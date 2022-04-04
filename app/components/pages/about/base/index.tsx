@@ -108,7 +108,7 @@ const Page: FC = () => {
             <Link
               py={{ "base": 4, "sm": 2 }}
               px={{ "base": 5, "sm": 4 }}
-              href="https://www.linkedin.com/in/masafullstack"
+              href="https://jp.linkedin.com/in/masafullstack?trk=public-profile-badge-profile-badge-view-profile-cta"
               rounded="md"
               bg="#0e76a8"
               color="#fff"
