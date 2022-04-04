@@ -41,7 +41,7 @@ const LINKS = [
   },
   {
     url: "/about",
-    title: "About",
+    title: "About Me",
     target: "_self",
     scroll: "about"
   },
