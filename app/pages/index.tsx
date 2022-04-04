@@ -3,7 +3,8 @@ import ProjectsPage from "components/pages/projects/base";
 import AboutPage from "components/pages/about/base";
 import PricePage from "components/pages/index/base/price";
 import { NextPage } from "next";
-import { Box, Image } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import { ChevronUpIcon } from '@chakra-ui/icons'
 
 import solutions from "public/data/solutions.json";
 import projects from "public/data/projects.json";
@@ -41,14 +42,15 @@ const IndexPage: NextPage = () => {
           bottom='20px'
           right={['16px', '84px']}
           zIndex={1}
-          _hover={{ cursor: "pointer" }}
+          _hover={{ cursor: "pointer", bgColor: "gray.200" }}
         >
-          <Image
+          <ChevronUpIcon w={24} h={24} />
+          {/* <Image
             src="/images/common/top.svg"
             alt="Logo"
             boxSize={{ base: 24, md: 120 }}
             mx="auto"
-          />
+          /> */}
         </Box>
       </Scroll>)}
     </>

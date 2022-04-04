@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React, { FC } from "react";
-import { IoLogoGithub, IoLogoTwitter } from "react-icons/io";
+import { IoLogoGithub, IoLogoTwitter, IoLogoLinkedin } from "react-icons/io";
 
 const Page: FC = () => {
   const headingNode = () => {
@@ -106,31 +106,48 @@ const Page: FC = () => {
         <Box d="flex" alignItems="center">
           <HStack spacing={4}>
             <Link
-              py={2}
-              px={4}
+              py={{ "base": 4, "sm": 2 }}
+              px={{ "base": 5, "sm": 4 }}
+              href="https://jp.linkedin.com/in/masafullstack"
+              rounded="md"
+              bg="#0e76a8"
+              color="#fff"
+              fontWeight="bold"
+              fontSize={"2xl"}
+              isExternal
+            >
+              <HStack spacing={2} alignItems="center">
+                <Box as={IoLogoLinkedin} /> <Text fontSize={"md"} display={{ "base": "none", "sm": "block" }}>Linkedin</Text>
+              </HStack>
+            </Link>
+            <Link
+              py={{ "base": 4, "sm": 2 }}
+              px={{ "base": 5, "sm": 4 }}
               href="https://github.com/masa-fullstack"
               rounded="md"
               bg="#333"
               color="#fff"
               fontWeight="bold"
+              fontSize={"2xl"}
               isExternal
             >
               <HStack spacing={2} alignItems="center">
-                <Box as={IoLogoGithub} /> <Text>Github</Text>
+                <Box as={IoLogoGithub} /> <Text fontSize={"md"} display={{ "base": "none", "sm": "block" }}>Github</Text>
               </HStack>
             </Link>
             <Link
-              py={2}
-              px={4}
+              py={{ "base": 4, "sm": 2 }}
+              px={{ "base": 5, "sm": 4 }}
               href="https://twitter.com/_i_masa"
               rounded="md"
-              bg="#0e76a8"
+              bg="#1DA1F2"
               color="#fff"
               fontWeight="bold"
+              fontSize={"2xl"}
               isExternal
             >
               <HStack spacing={2} alignItems="center">
-                <Box as={IoLogoTwitter} /> <Text>Twitter</Text>
+                <Box as={IoLogoTwitter} /> <Text fontSize={"md"} display={{ "base": "none", "sm": "block" }}>Twitter</Text>
               </HStack>
             </Link>
           </HStack>
