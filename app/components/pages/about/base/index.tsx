@@ -89,6 +89,19 @@ const Page: FC = () => {
           【アプリケーション】<br />
           Docker, Git, UiPath, DataSpider, Vscode, Figma ... etc<br />
         </Text>
+        <Heading as="h1" size="lg" mt={16} mb={8}>
+          The books I read
+        </Heading>
+        <Box bg="white" color="gray.900" rounded="full" p={1} w={"500px"} h={"1422px"}>
+          <Image
+            src="/images/common/books.png"
+            alt="The books I read"
+            height={"2133px"}
+            width={"750px"}
+            quality={100}
+            priority
+          />
+        </Box>
       </Box>
 
     );

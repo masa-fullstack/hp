@@ -3,7 +3,11 @@ import { theme } from "@chakra-ui/react";
 
 const prismBaseTheme = css`
   .article > h2 {
-    font-family: "Noto Serif", serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI=
+    ", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+      Ca= ntarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emo=
+    ji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+      sans-serif;
     padding: ${theme.space[8]} 0 ${theme.space[2]};
     font-size: ${theme.fontSizes["2xl"]};
     font-weight: ${theme.fontWeights.bold};
@@ -12,7 +16,11 @@ const prismBaseTheme = css`
   .article p,
   .article ul,
   .article ol {
-    font-family: "Inter", sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI=
+    ", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+      Ca= ntarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emo=
+    ji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+      sans-serif;
     margin: ${theme.space[4]} 0 ${theme.space[8]};
     line-height: ${theme.lineHeights.tall};
   }
@@ -61,7 +69,11 @@ const prismBaseTheme = css`
   pre[class*="language-"] {
     color: ${theme.colors.gray[800]};
     background: none;
-    font-family: "Menlo", Monaco, Consolas, Courier New, monospace;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI=
+    ", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+      Ca= ntarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emo=
+    ji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+      sans-serif;
     font-size: ${theme.fontSizes["sm"]};
     text-align: left;
     white-space: pre;
@@ -196,7 +208,11 @@ const prismBaseTheme = css`
 
   .remark-code-title {
     padding: ${theme.space[2]} ${theme.space[4]};
-    font-family: ${theme.fonts.mono};
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI=
+    ", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+      Ca= ntarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emo=
+    ji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+      sans-serif;
     background: ${theme.colors.gray[200]};
     color: ${theme.colors.gray[800]};
     border: 1px solid ${theme.colors.gray[200]};
