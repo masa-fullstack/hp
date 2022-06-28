@@ -3,7 +3,7 @@
     "title": "今日飲も！🍻",
     "description": "LINEのトークルームから、飲みのお誘いの回答が１タップで出来るLINEアプリの開発を行いました。",
     "skills": ["TypeScript", "LIFF", "NextJS", "NestJS", "ServerlessFramework", "AWS lambda/DynamoDB"],
-    "url": "https://kyonomo.com",
+    "url": "https://kyonomo.vercel.app",
     "demoUrl": "https://github.com/masa-fullstack/kyonomo",
     "imgUrl": "kyonomo.png"
   },
